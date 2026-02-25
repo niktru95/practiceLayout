@@ -8,103 +8,103 @@
 </head>
 <body>
   <header class="header">
-    <!-- <div class="top-bar">
-      <span>test@mail.test</span>
-    </div> -->
-    <nav class="nav">
-      <div class="logo">MA,m</div>
-      <ul class="menu">
-        <li>О нас</li>
-        <li>Карьера</li>
-        <li>Контакты</li>
+    <nav class="header__nav">
+      <div class="header__logo">MA,m</div>
+      <ul class="header__menu">
+        <li class="header__menu-item">О нас</li>
+        <li class="header__menu-item">Карьера</li>
+        <li class="header__menu-item">Контакты</li>
       </ul>
-      <div class="search">🔍</div>
+      <div class="header__search">🔍</div>
     </nav>
   </header>
 
   <section class="hero">
-    <div class="hero-overlay">
-      <div class="hero-inner">
-        <div class="hero-content">
-          <h1>Первый в мире <br> ледокольный газовоз (ТЕСТ)</h1>
-          <p>Et elementum penatibus iaculis eget ac amet lorem. In lobortis magna quis odio.</p>
-          <a href="https://mintrans.gov.ru/press-center/news/9557" class="btn-primary" data-test="more_link">Подробнее</a>
+    <div class="hero__overlay">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">Первый в мире <br> ледокольный газовоз (ТЕСТ)</h1>
+          <p class="hero__description">Et elementum penatibus iaculis eget ac amet lorem. In lobortis magna quis odio.</p>
+          <a
+            href="https://mintrans.gov.ru/press-center/news/9557"
+            class="hero__button btn-primary"
+            data-test="more_link"
+          >Подробнее</a>
         </div>
 
-        <div class="ship-info">
-          <h3>ТАНКЕР-ГАЗОВОЗ СПГ «КАПИТАН ДАНИЛКИН»</h3>
-          <ul>
-            <li>
-              <span class="label">Грузоподъёмность:</span>
-              <span class="value">172 600м3</span>
+        <div class="hero__ship ship">
+          <h3 class="ship__title">ТАНКЕР-ГАЗОВОЗ СПГ «КАПИТАН ДАНИЛКИН»</h3>
+          <ul class="ship__list">
+            <li class="ship__item">
+              <span class="ship__label">Грузоподъёмность:</span>
+              <span class="ship__value">172 600м3</span>
             </li>
-            <li>
-              <span class="label">Ледопроходимость:</span>
-              <span class="value">2.1 м</span>
+            <li class="ship__item">
+              <span class="ship__label">Ледопроходимость:</span>
+              <span class="ship__value">2.1 м</span>
             </li>
-            <li>
-              <span class="label">Ледовый класс:</span>
-              <span class="value">Arc7</span>
+            <li class="ship__item">
+              <span class="ship__label">Ледовый класс:</span>
+              <span class="ship__value">Arc7</span>
             </li>
-            <li>
-              <span class="label">Число «Азиподов»:</span>
-              <span class="value">37</span>
+            <li class="ship__item">
+              <span class="ship__label">Число «Азиподов»:</span>
+              <span class="ship__value">37</span>
             </li>
           </ul>
-          <img src="./img/96074e417894a8b424de39f7bea4ab20a431d047.png" alt="schema_ship"/>
+          <img src="./img/96074e417894a8b424de39f7bea4ab20a431d047.png" alt="schema_ship" class="ship__image"/>
         </div>
       </div>
     </div>
   </section>
 
   <section class="news">
-    <div class="container">
-      <div class="news-header">
-        <h2>Новости</h2>
-        <a href="#" class="all-news" data-test="all_news">Все новости</a>
+    <div class="news__container container">
+      <div class="news__header">
+        <h2 class="news__title">Новости</h2>
+        <a href="#" class="news__all-link" data-test="all_news">Все новости</a>
       </div>
 
-      <!-- Простой блок погоды -->
-      <div class="weather-widget">
-        <h3 class ="city-name"></h3>
-        <div class="weather-simple">
-          <span class="temperature"></span>
-          <span class="description"></span>
-          <span class="sealvl"></span>
+      <div class="news__weather weather">
+        <h3 class="weather__city-name"></h3>
+        <div class="weather__simple">
+          <span class="weather__temperature"></span>
+          <span class="weather__description"></span>
+          <span class="weather__sealvl"></span>
         </div>
       </div>
 
-      <div class="slider-container">
-        <div class="slider-wrapper">
-          <div class="slider-track">
-            <div class="news-card card-1 active">
-              <span class="date">20 декабря 2022 г.</span>
-              <p>Elementum ipsum eget venenatis at rutrum penem. Neque gravida nunc dolor felis eu tellus.</p>
+      <div class="news__slider slider">
+        <div class="slider__wrapper">
+          <div class="slider__track">
+            <div class="slider__card slider__card--1 slider__card--active">
+              <span class="slider__date">20 декабря 2022 г.</span>
+              <p class="slider__text">Elementum ipsum eget venenatis at rutrum penem. Neque gravida nunc dolor felis eu tellus.</p>
             </div>
-            <div class="news-card card-2">
-              <span class="date">20 декабря 2022 г.</span>
-              <p>Volutpat vehicula scelerisque consectetur nullam nunc vel.</p>
+            <div class="slider__card slider__card--2">
+              <span class="slider__date">20 декабря 2022 г.</span>
+              <p class="slider__text">Volutpat vehicula scelerisque consectetur nullam nunc vel.</p>
             </div>
-            <div class="news-card card-3">
-              <span class="date">14 декабря 2022 г.</span>
-              <p>Etiam donec fames sed nunc sed euismod.</p>
+            <div class="slider__card slider__card--3">
+              <span class="slider__date">14 декабря 2022 г.</span>
+              <p class="slider__text">Etiam donec fames sed nunc sed euismod.</p>
             </div>
-            <div class="news-card card-4">
-              <span class="date">20 декабря 2022 г.</span>
-              <p>Amel volutpat urna vitae vitae. Varius accumsan metus egestas sagittis arcu lorem.</p>
+            <div class="slider__card slider__card--4">
+              <span class="slider__date">20 декабря 2022 г.</span>
+              <p class="slider__text">Amel volutpat urna vitae vitae. Varius accumsan metus egestas sagittis arcu lorem.</p>
             </div>
           </div>
         </div>
         
-        <div class="slider-controls">
-          <button class="slider-btn prev-btn" aria-label="Предыдущий слайд">‹</button>
-          <div class="slider-dots">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
-            <span class="dot" data-slide="3"></span>
+        <div class="slider__controls">
+          <button class="slider__button slider__button--prev" aria-label="Предыдущий слайд">‹</button>
+          <div class="slider__dots">
+            <span class="slider__dot slider__dot--active" data-slide="0"></span>
+            <span class="slider__dot" data-slide="1"></span>
+            <span class="slider__dot" data-slide="2"></span>
+            <span class="slider__dot" data-slide="3"></span>
           </div>
-          <button class="slider-btn next-btn" aria-label="Следующий слайд">›</button>
+          <button class="slider__button slider__button--next" aria-label="Следующий слайд">›</button>
         </div>
       </div>
     </div>
@@ -125,6 +125,6 @@
       </div>
     </div>
   </section>
-  <script src="./js/main.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>
