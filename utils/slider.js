@@ -2,8 +2,6 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll(".slider__card");
 const dots = document.querySelectorAll(".slider__dot");
-const prevBtn = document.querySelector(".slider__button--prev");
-const nextBtn = document.querySelector(".slider__button--next");
 
 function showSlide(index) {
   slides.forEach((slide) => {
