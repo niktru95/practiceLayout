@@ -294,6 +294,10 @@
     position: relative;
   }
 
+  .slider__button:hover {
+  background: #333;
+}
+
   .history {
     background: #133D8D;
   }
@@ -314,7 +318,7 @@
     flex: 1 1 35%;
   }
   
-  .history__timeline-img {
+  .history__image-pic {
     width: 100%;
     padding-top: 100px;
     display: block;
